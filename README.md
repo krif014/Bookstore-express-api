@@ -137,7 +137,7 @@ http://localhost:3000/api-docs.json
 
 
 
-![Swagger UI Preview](./images/swaggerpreview.png.png)
+![Swagger UI Preview](images/swaggerpreview.png)
 
 ## API Endpoints
 
