@@ -73,3 +73,15 @@ test('book API validates required book fields', async () => {
     })
     .expect(400);
 });
+
+test('swagger docs describe all book endpoints', async () => {
+  const response = await request(app).get('/api-docs.json').expect(200);
+  const paths = response.body.paths;
+
+  assert.equal(response.body.openapi, '3.0.3');
+  assert.ok(paths['/api/books'].post);
+  assert.ok(paths['/api/books'].get);
+  assert.ok(paths['/api/books/{id}'].get);
+  assert.ok(paths['/api/books/{id}'].put);
+  assert.ok(paths['/api/books/{id}'].delete);
+});
