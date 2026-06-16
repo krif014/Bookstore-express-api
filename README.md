@@ -135,15 +135,9 @@ http://localhost:3000/api-docs.json
 
 ## Swagger UI Preview
 
-Add your Swagger UI screenshot inside the `images` folder using this file name:
 
-```text
-images/swagger-ui-preview.png
-```
 
-Then the preview will appear here:
-
-![Swagger UI Preview](./images/swagger-ui-preview.png)
+![Swagger UI Preview](./images/swaggerpreview.png.png)
 
 ## API Endpoints
 
